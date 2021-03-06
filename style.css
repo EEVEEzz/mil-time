@@ -50,16 +50,13 @@ h1 {
 
 .outputs {
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
+    flex-direction: row;
+    min-width: 400px;
     justify-content: space-evenly;
-    width: 500px;
 }
 
 .inputs {
-    display: flex;
     justify-content: space-evenly;
-    width: 550px;
 }
 
 .input {
@@ -69,5 +66,4 @@ h1 {
 .output {
     text-align: center;
     display: flex;
-    flex-direction: column;
 }
