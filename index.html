@@ -2,58 +2,67 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="militia">
-    
-    <h1>Military Time</h1>
-    
-    <input type="text" id="minutes"  placeholder="minutes" />
-    <button id="btn" onclick="getHour()">Get Hours</button>
-    <br />
-    <p id="hours"></p>
-  </div>
-  
-  <div class="std">
-    
-    <h1>Distance, Time & Speed</h1>
-    
-    Distance(km): <br />
-    <input placeholder="Distance" type="text" id="distance" />
-    
-    Time(0.00 - hrs.mins): <br />
-    <input placeholder="Time" type="text" id="time" />
-    
-    Speed(kmph): <br />
-    <input placeholder="Speed" type="text" id="speed" />
-    
-    
-    <h1>Output:</h1>
-   
-    distance:
-    <p id="distanceOut"></p>
-    
-    <br />
-    time:
-    <p id="timeOut"></p>
-    
-    <br />
-    speed:
-    <p id="speedOut"></p>
-    
-    <button onclick="std()">Calculate DTS</button>
-    
-     <a href="./index.html"><button>Clear Page</button></a>
-  </div>
- 
-  
-  <script src="./main.js"></script>
+
+    <div class="militia">
+        <h1>Minutes to Hours</h1>
+        <input type="text" id="minutes" placeholder="minutes" />
+        <button id="btn" onclick="getHour()">Hours</button>
+        <br />
+        <p id="hours"></p>
+    </div>
+
+    <div class="std">
+        <h1>Distance, Time & Speed</h1>
+
+        <div class="inputs">
+            <div class="input">
+                <span>Distance (km):</span>
+                <input placeholder="" type="text" id="distance" />
+            </div>
+            <div class="input">
+                <span>Time (hours):</span>
+                <input placeholder="" type="text" id="time" />
+            </div>
+            <div class="input">
+                <span>Speed (km/h):</span>
+                <input placeholder="" type="text" id="speed" />
+            </div>
+        </div>
+
+
+        <h1>Output:</h1>
+
+        <div class="outputs">
+
+            <div class="ouput">
+                DISTANCE:
+                <p id="distanceOut"></p>
+            </div>
+            <div class="ouput">
+                TIME:
+                <p id="timeOut"></p>
+            </div>
+            <div class="ouput">
+                SPEED:
+                <p id="speedOut"></p>
+            </div>
+        </div>
+        <br>
+        <button onclick="std()">Calculate DTS</button>
+        <br>
+        <a href="./index.html"><button>Clear Page</button></a>
+    </div>
+
+
+    <script src="./main.js"></script>
 </body>
 
 </html>

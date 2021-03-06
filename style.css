@@ -1,47 +1,73 @@
 body {
-  font-weight: bold;
-  background: linear-gradient(90deg, #D7D7D7, #A5A5A5, #707172)
+    font-weight: bold;
+    height: 100vh;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 .std {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .militia {
-  border-style: solid;
-  border-width: 0 0 2px 0;
-  border-color: black;
-  align-items: center;
-  text-align: center;
-  height: 165px;
+    align-items: center;
+    text-align: center;
 }
 
 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-input, button {
-max-width: 150px;
-padding: 5px;
-font-size: 18px;
+input,
+button {
+    max-width: 150px;
+    padding: 5px;
+    font-size: 18px;
 }
 
 button {
-  border: none;
-  background: greenyellow;
-  margin-top: 10px;
+    border: none;
+    background: greenyellow;
+    margin-top: 10px;
 }
 
 input {
-  margin-top: 5px;
-  margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 p {
-  color: yellow;
-  height: 15px;
-  font-size: 18px;
+    color: red;
+    height: 15px;
+    font-size: 21px;
+}
+
+h1 {
+    color: #09203f;
+}
+
+.outputs {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-evenly;
+    width: 500px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 550px;
+}
+
+.input {
+    text-align: center;
+}
+
+.output {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
