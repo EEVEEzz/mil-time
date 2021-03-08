@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-weight: bold;
     height: 100vh;
@@ -13,6 +19,12 @@ body {
 .militia {
     align-items: center;
     text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 p {
@@ -53,8 +65,13 @@ p {
     font-size: 21px;
 }
 
-h1 {
+h1,
+h2 {
     color: #09203f;
+    border-style: solid;
+    border-color: #09203f;
+    border-width: 0 0 1px 0;
+    max-width: fit-content;
 }
 
 .outputs {

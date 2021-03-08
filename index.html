@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML</title>
+    <title>SPEED, DISTANCE & TIME</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="militia">
+    <header>
         <h1>Watch Hours</h1>
+    </header>
+
+    <div class="militia">
         <input type="text" id="minutes" placeholder="minutes" />
-        <button id="btn" onclick="getHour()">Hours</button>
+        <button id="btn" onclick="getHour()">Get Hours</button>
         <br />
         <p id="hours"></p>
+        <br />
     </div>
 
 
 
     <div class="std">
         <h1>Distance, Time & Speed</h1>
-
+        <br />
         <div class="inputs">
             <div class="input">
                 <span>Distance (km):</span>
@@ -38,12 +42,12 @@
                 <input placeholder="" type="text" id="speed" />
             </div>
         </div>
-
+        <br />
         <button class="calc-btn" onclick="std()">Calculate DTS</button>
-
+        <br />
 
         <div id="calculate">
-            <h2 id="calc-title"></h2>
+            <h2 id="calc-title"></h2><br />
 
             <div class="line1">
                 <span id="line1"></span>
@@ -64,9 +68,9 @@
                 <span id="line6"></span>
             </div>
         </div>
-
+        <br />
         <h1>Output:</h1>
-
+        <br />
         <div class="outputs">
 
             <div class="ouput">
@@ -82,8 +86,8 @@
                 <p id="speedOut"></p>
             </div>
         </div>
-        <br>
-        <br>
+        <br />
+        <br />
         <a href="./index.html"><button>Clear Page</button></a>
     </div>
 
