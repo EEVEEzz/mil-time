@@ -6,7 +6,7 @@ function getHour() {
 
     let remainder = minutes % 60;
 
-    let totalhours = Math.round(minutes / 60);
+    let totalhours = Math.floor(minutes / 60);
 
     if (remainder < 10) {
         remainder = '0' + remainder;
@@ -51,7 +51,7 @@ function std() {
 
         // STEPS TO ANSWER
         title.innerHTML = "Speed Calculation: ";
-        line1.innerHTML = " => " + distance.value + " / " + time.value + " = " + Math.round(distance.value / time.value);
+        line1.innerHTML = " => " + distance.value + " / " + time.value + " = " + (distance.value / time.value);
         line2.innerHTML = " => " + Math.round(distance.value / time.value) + " km/h";
     }
 
