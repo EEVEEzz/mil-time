@@ -2,123 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SPEED, DISTANCE & TIME</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPEED, DISTANCE & TIME</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <header>
-        <h1>Watch Hours</h1>
-    </header>
-
-    <div class="militia">
-        <input type="text" id="minutes" placeholder="minutes" />
-        <button id="btn" onclick="getHour()">Get Hours</button>
-        <br />
-        <p id="hours"></p>
-        <br />
+  <header>
+    <h1>Watch Hours</h1>
+  </header>
+  <div class="militia">
+    <input type="text" id="minutes" placeholder="minutes" />
+    <button id="btn" onclick="getHour()">Get Hours</button>
+    <br />
+    <p id="hours"></p>
+    <br />
+  </div>
+  <div class="time-calc">
+    <h3 id="time-heading"></h3>
+    <br />
+    <div class="l1">
+      <span id="l1"></span>
     </div>
-
-    <div class="time-calc">
-        <h3 id="time-heading"></h3>
-        <br />
-
-        <div class="l1">
-            <span id="l1"></span>
-        </div>
-        <div class="l1">
-            <span id="l2"></span>
-        </div>
-        <div class="l1">
-            <span id="l3"></span>
-        </div>
-        <div class="l1">
-            <span id="l4"></span>
-        </div>
-        <div class="l1">
-            <span id="l5"></span>
-        </div>
+    <div class="l1">
+      <span id="l2"></span>
     </div>
-
+    <div class="l1">
+      <span id="l3"></span>
+    </div>
+    <div class="l1">
+      <span id="l4"></span>
+    </div>
+    <div class="l1">
+      <span id="l5"></span>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="std">
+    <h1>Distance, Time & Speed</h1>
+    <br />
+    <div class="inputs">
+      <div class="input">
+        <span>Distance (km):</span>
+        <input placeholder="" type="text" id="distance" />
+      </div>
+      <div class="input">
+        <span>Time (hours):</span>
+        <input placeholder="" type="text" id="time" />
+      </div>
+      <div class="input">
+        <span>Speed (km/h):</span>
+        <input placeholder="" type="text" id="speed" />
+      </div>
+    </div>
+    <br />
+    <button class="calc-btn" onclick="std()">Calculate DTS</button>
+    <br />
+    <div id="calculate">
+      <h3 id="calc-title"></h3><br />
+      <div class="line1">
+        <span id="line1"></span>
+      </div>
+      <div class="line2">
+        <span id="line2"></span>
+      </div>
+      <div class="line3">
+        <span id="line3"></span>
+      </div>
+      <div class="line4">
+        <span id="line4"></span>
+      </div>
+      <div class="line5">
+        <span id="line5"></span>
+      </div>
+      <div class="line6">
+        <span id="line6"></span>
+      </div>
+    </div>
+    <br />
+    <h1>Output:</h1>
+    <br />
+    <div class="outputs">
+      <div class="ouput">
+        DISTANCE:
+        <p id="distanceOut"></p>
+      </div>
+      <div class="ouput">
+        TIME:
+        <p id="timeOut"></p>
+      </div>
+      <div class="ouput">
+        SPEED:
+        <p id="speedOut"></p>
+      </div>
+    </div>
     <br />
     <br />
-
-    <div class="std">
-        <h1>Distance, Time & Speed</h1>
-        <br />
-        <div class="inputs">
-            <div class="input">
-                <span>Distance (km):</span>
-                <input placeholder="" type="text" id="distance" />
-            </div>
-            <div class="input">
-                <span>Time (hours):</span>
-                <input placeholder="" type="text" id="time" />
-            </div>
-            <div class="input">
-                <span>Speed (km/h):</span>
-                <input placeholder="" type="text" id="speed" />
-            </div>
-        </div>
-        <br />
-        <button class="calc-btn" onclick="std()">Calculate DTS</button>
-        <br />
-
-        <div id="calculate">
-            <h3 id="calc-title"></h3><br />
-
-            <div class="line1">
-                <span id="line1"></span>
-            </div>
-            <div class="line2">
-                <span id="line2"></span>
-            </div>
-            <div class="line3">
-                <span id="line3"></span>
-            </div>
-            <div class="line4">
-                <span id="line4"></span>
-            </div>
-            <div class="line5">
-                <span id="line5"></span>
-            </div>
-            <div class="line6">
-                <span id="line6"></span>
-            </div>
-        </div>
-        <br />
-        <h1>Output:</h1>
-        <br />
-        <div class="outputs">
-
-            <div class="ouput">
-                DISTANCE:
-                <p id="distanceOut"></p>
-            </div>
-            <div class="ouput">
-                TIME:
-                <p id="timeOut"></p>
-            </div>
-            <div class="ouput">
-                SPEED:
-                <p id="speedOut"></p>
-            </div>
-        </div>
-        <br />
-        <br />
-        <a href="./index.html"><button>Clear Page</button></a>
-    </div>
-
-
-
-
-
-
-    <script src="./main.js"></script>
+    <a href="./index.html"><button>Clear Page</button></a>
+  </div>
+  <script src="./main.js"></script>
 </body>
 
 </html>
