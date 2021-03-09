@@ -1,12 +1,19 @@
 function getHour() {
 
+    let timeHead = document.getElementById('time-heading');
+    let l1 = document.getElementById('l1');
+    let l2 = document.getElementById('l2');
+    let l3 = document.getElementById('l3');
+    let l4 = document.getElementById('l4');
+    let l5 = document.getElementById('l5');
+
     let hours = document.getElementById('hours');
 
-    let minutes = document.getElementById('minutes').value;
+    let minutes = document.getElementById('minutes');
 
-    let remainder = minutes % 60;
+    let remainder = minutes.value % 60;
 
-    let totalhours = Math.floor(minutes / 60);
+    let totalhours = Math.floor(minutes.value / 60);
 
     if (remainder < 10) {
         remainder = '0' + remainder;
@@ -17,6 +24,14 @@ function getHour() {
     }
 
     hours.innerHTML = totalhours + 'h' + remainder;
+
+    time.innerHTML = "";
+    timeHead.innerHTML = minutes.value + " minutes to Watch Hours";
+    l1.innerHTML = " => " + minutes.value + " / 60 = " + Math.floor(minutes.value / 60) + " hours";
+    l2.innerHTML = " => " + Math.floor(minutes.value / 60) + " X 60 = " + Math.floor(minutes.value / 60) * 60;
+    l3.innerHTML = " => " + minutes.value + " - " + Math.floor(minutes.value / 60) * 60 + " = " + remainder + " minutes";
+    l4.innerHTML = " => " + Math.floor(minutes.value / 60) + " hours and " + remainder + " minutes";
+    l5.innerHTML = " => " + totalhours + 'h' + remainder;
 
 }
 

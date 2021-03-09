@@ -28,6 +28,22 @@ header {
     align-items: center;
 }
 
+.time-calc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.l1,
+.l2,
+.l3,
+.l4,
+.l5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
 p {
     margin-top: 10px;
     margin-bottom: 10px;
